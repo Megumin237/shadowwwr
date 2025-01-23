@@ -1,0 +1,75 @@
+body {
+    background-color: #222; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make sure it covers the full viewport height */
+}
+
+.container {
+    background-color: #333; /* Slightly darker container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 80%; /* Adjust as needed */
+    max-width: 900px;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-area, .preview-area {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #666;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #777;
+    box-shadow: 0 0 5px rgba(100, 100, 100, 0.5);
+}
+
+.preview-area {
+    background-color: #2a2a2a; /* Slightly lighter preview background */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    min-height: 100px; /* Ensure preview area is visible even with no content */
+}
+
+#livePreview {
+    white-space: pre-wrap; /* Preserve line breaks and spaces from textarea */
+}
+
+.gold-text {
+    color: gold;
+}
+
+.white-text {
+    color: #f0f0f0; /* Or just inherit from body's color */
+}
